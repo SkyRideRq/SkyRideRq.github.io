@@ -1,18 +1,479 @@
-<!doctype html>
-
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <title>Piotr - the Developer</title>
-  <meta name="description" content="Piotrek - the Developer">
-  <meta name="author" content="Piotrek">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__holder">
+          <img class="logo" src="gfx/logo.svg" alt="logo" />
+          <nav>
+            <ul class="header__menu">
+              <li class="header__item">
+                <a
+                  class="header__link header__link--active"
+                  data-link="ico"
+                  href="#ico"
+                  >ICO</a
+                >
+              </li>
+              <li class="header__item">
+                <a class="header__link" data-link="team" href="#team">Team</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" data-link="contact" href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main bg">
+      <section
+        class="hero"
+        id="ico"
+        aria-label="Page banner with newsletter subscribe form, video content and social media links"
+      >
+        <!-- <img src="/gfx/BG.svg" alt="section background" class="hero__bg" /> -->
+        <div class="container">
+          <div class="hero__holder">
+            <div class="hero__left">
+              <h1 class="hero__header">
+                The first <span class="nobr">fully-automatic</span><br />
+                social crypto trading<br />
+                platform with real crypto<br />
+                currency
+              </h1>
+              <form action="" class="hero__form">
+                <label for="subscribe" class="hero__label"
+                  >Subscribe and get the lastes information</label
+                >
+                <div class="hero__box">
+                  <input
+                    type="email"
+                    name="subscribe"
+                    id="subscribe"
+                    class="hero__input"
+                    value="Enter your email"
+                  />
+                  <button type="submit" class="hero__submit btn">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="hero__right">
+              <div class="hero__video">
+                <img
+                  src="gfx/video_mask.svg"
+                  alt="video picture"
+                  class="hero__img"
+                />
+                <button
+                  class="hero__play btn-play btn--shadow open-modal"
+                  data-to="video"
+                >
+                  <div class="triangle"></div>
+                </button>
+              </div>
+              <div class="hero__social">
+                <a href="#" class="btn-social">
+                  <img src="gfx/tw.svg" alt="Twitter" />
+                </a>
+                <a href="#" class="btn-social">
+                  <img src="gfx/fb.svg" alt="facebook" />
+                </a>
+              </div>
+            </div>
+            <div class="hero__down">
+              <a class="btn-down" href="#team">
+                <img
+                  src="gfx/arrow_down.svg"
+                  alt="arrow down"
+                  class="btn-down__arrow"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="team"
+        id="team"
+        aria-label="Section about our team members"
+      >
+        <div class="container">
+          <h2 class="section__header">TEAM</h2>
+          <div class="team__items swiper-container" id="slider">
+            <div class="swiper-wrapper">
+              <div class="team__item swiper-slide">
+                <img
+                  src="gfx/edgar_morrison.svg"
+                  alt="Edgar Morrison picture"
+                  class="team__img"
+                />
+                <button class="team__name open-modal" data-to="info-1">
+                  <span class="nobr">Edgar Morrison</span>
+                </button>
+                <p class="team__position">CEO</p>
+                <p class="team__text">
+                  Having used discount toner cartridges for twenty years, there
+                  have been a lot of changes in the toner...
+                </p>
+                <div class="team__social">
+                  <a href="#"><img src="gfx/fb-black.svg" alt="facebook" /></a>
+                  <a href="#"><img src="gfx/linkedin.svg" alt="linkedin" /></a>
+                </div>
+              </div>
+              <div class="team__item swiper-slide">
+                <img
+                  src="gfx/mea_martin.svg"
+                  alt="Mae Martin picture"
+                  class="team__img"
+                />
+                <button class="team__name open-modal" data-to="info-2">
+                  <span class="nobr">Mae Martin</span>
+                </button>
+                <p class="team__position">CTO</p>
+                <p class="team__text">
+                  Having used discount toner cartridges for twenty years, there
+                  have been a lot of changes in the toner...
+                </p>
+                <div class="team__social">
+                  <a href="#"><img src="gfx/fb-black.svg" alt="facebook" /></a>
+                  <a href="#"><img src="gfx/linkedin.svg" alt="linkedin" /></a>
+                </div>
+              </div>
+              <div class="team__item swiper-slide">
+                <img
+                  src="gfx/david_banks.svg"
+                  alt="David Banks picture"
+                  class="team__img"
+                />
+                <button class="team__name open-modal" data-to="info-3">
+                  <span class="nobr">David Banks</span>
+                </button>
+                <p class="team__position">CFO</p>
+                <p class="team__text">
+                  Having used discount toner cartridges for twenty years, there
+                  have been a lot of changes in the toner...
+                </p>
+                <div class="team__social">
+                  <a href="#"><img src="gfx/fb-black.svg" alt="facebook" /></a>
+                  <a href="#"><img src="gfx/linkedin.svg" alt="linkedin" /></a>
+                </div>
+              </div>
+              <div class="team__item swiper-slide">
+                <img
+                  src="gfx/frederick_parson.svg"
+                  alt="Frederick Parsons picture"
+                  class="team__img"
+                />
+                <button class="team__name open-modal" data-to="info-4">
+                  <span class="nobr">Frederick Parsons</span>
+                </button>
+                <p class="team__position">CEO</p>
+                <p class="team__text">
+                  Having used discount toner cartridges for twenty years, there
+                  have been a lot of changes in the toner...
+                </p>
+                <div class="team__social">
+                  <a href="#"><img src="gfx/fb-black.svg" alt="facebook" /></a>
+                  <a href="#"><img src="gfx/linkedin.svg" alt="linkedin" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team__pagination swiper-pagination"></div>
+        </div>
+      </section>
 
-</head>
+      <section
+        class="contact"
+        id="contact"
+        aria-label="Section with contact form"
+      >
+        <div class="container">
+          <h2 class="section__header section__header--white">Contact Us</h2>
+          <h4 class="contact__text">
+            Most calendars are designed for teams.<br />
+            Slate is designed for freelancers
+          </h4>
+          <form action="" class="contact__form">
+            <input type="text" class="contact__input" value="Your Name" />
+            <input type="email" class="contact__input" value="Your Email" />
+            <div class="contact__box">
+              <input
+                class="contact__checkbox"
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+              />
+              <label class="contact__label" for="checkbox">Checkbox</label>
+            </div>
+            <button type="submit" class="btn btn--shadow btn--small">
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <img class="logo" src="gfx/logo.svg" alt="logo" />
+          <div class="footer__box">
+            <p class="footer__text">Contact us:</p>
+            <a href="mailto:have@nicecoding.io" class="footer__mail"
+              >have@nicecoding.io</a
+            >
+          </div>
+          <button class="btn btn--wide btn--shadow">Read Whitepaper</button>
+        </div>
+        <div class="footer__bottom">
+          <ul class="footer__links">
+            <li class="footer__item">
+              <a href="#" class="footer__link">© Copywriters 2020</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">FAQ</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms of Use</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="video">
+      <div class="modal__content modal__video">
+        <button class="modal__close"></button>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/-EhGsfUqqIU"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="modal" id="info-1">
+      <div class="modal__content modal__info">
+        <button class="modal__close"></button>
+        <p class="modal__header">Edgar Morrison</p>
+        <p class="modal__subheader">CEO</p>
+        <p class="modal__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+          ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+          duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+          amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet.
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="info-2">
+      <div class="modal__content modal__info">
+        <button class="modal__close"></button>
+        <p class="modal__header">Mae Martin</p>
+        <p class="modal__subheader">CTO</p>
+        <p class="modal__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+          ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+          duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+          amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet.
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="info-3">
+      <div class="modal__content modal__info">
+        <button class="modal__close"></button>
+        <p class="modal__header">David Banks</p>
+        <p class="modal__subheader">CFO</p>
+        <p class="modal__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+          ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+          duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+          amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet.
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="info-4">
+      <div class="modal__content modal__info">
+        <button class="modal__close"></button>
+        <p class="modal__header">Frederick Parsons</p>
+        <p class="modal__subheader">CEO</p>
+        <p class="modal__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+          ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+          duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+          amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+          dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+          deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt
+          nostrud amet.
+        </p>
+      </div>
+    </div>
+  </body>
 
-<body>
-  
-</body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </html>

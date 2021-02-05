@@ -1,0 +1,114 @@
+.team {
+  padding-top: 71px;
+  margin-bottom: 88px;
+  background-color: rgba(127, 139, 152, 0);
+  @media (max-width: 1025px) {
+    margin-bottom: 112px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 50px;
+    // margin: 0 -15px 88px -15px;
+    margin-bottom: 88px;
+    .container {
+      margin: 0;
+    }
+  }
+  &__items {
+    // max-width: 1170px;
+  }
+  .swiper-container {
+  }
+  .swiper-wrapper {
+    height: unset;
+    justify-content: space-between;
+    @media (max-width: 1025px) {
+      justify-content: unset;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin: 0 33px;
+    width: 240px;
+    @media (max-width: 1025px) {
+      width: 32% !important;
+    }
+    @media (max-width: 480px) {
+      width: 47% !important;
+      padding: 0 10px;
+    }
+  }
+  .swiper-slide {
+  }
+  &__img {
+    height: 131px;
+    margin-bottom: 15px;
+  }
+  &__name {
+    background: unset;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    // line-height: 2.125rem;
+    color: #38a5db;
+    margin-bottom: 5px;
+    @media (max-width: 480px) {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+  }
+  &__position {
+    letter-spacing: 0.26px;
+    line-height: 0.9375rem;
+    font-size: 0.8125rem;
+    color: #011226;
+    opacity: 0.5;
+    margin-bottom: 15px;
+    @media (max-width: 480px) {
+      margin-bottom: 10px;
+    }
+  }
+  &__text {
+    text-align: center;
+    color: #45515f;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+    @media (max-width: 480px) {
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+      margin-bottom: 10px;
+    }
+  }
+  &__social {
+    display: flex;
+    a {
+      border: 1px solid rgba(127, 139, 152, 0.3);
+      border-radius: 3px;
+      width: 43px;
+      height: 23px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:not(:last-of-type) {
+        margin-right: 6px;
+      }
+    }
+  }
+  &__pagination {
+    left: 50%;
+    bottom: -60px;
+    .swiper-pagination-bullet {
+      &:not(:last-of-type) {
+        margin-right: 8px;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background: #4250bf;
+    }
+    @media (max-width: 480px) {
+      bottom: -40px;
+    }
+  }
+}
